@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SunUtil:war exploded">
+    <output-path>D:/apache-tomcat-8.5.30/webapps/SunUtil</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SunUtil" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SunUtil/web/Web" />
+    </root>
+  </artifact>
+</component>
