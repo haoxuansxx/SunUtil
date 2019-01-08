@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 二叉堆
+ * @Authon Sun
  */
 public class HeapOperator {
 
@@ -19,7 +20,7 @@ public class HeapOperator {
 
     /**
      * 上浮调整
-     * @param array     待调整的堆
+     * @param array 待调整的堆
      */
     public static void upAdjust(int[] array) {
         int childIndex = array.length - 1;
@@ -38,7 +39,7 @@ public class HeapOperator {
     /**
      * 下沉调整
      *
-     * @param array       待调整的堆
+     * @param array 待调整的堆
      * @param parentIndex 要下沉的父节点
      * @param parentIndex 堆的有效大小
      */
@@ -65,7 +66,7 @@ public class HeapOperator {
 
     /**
      * 构建堆
-     * @param array     待调整的堆
+     * @param array 待调整的堆
      */
     public static void buildHeap(int[] array) {
         // 从最后一个非叶子节点开始，依次下沉调整

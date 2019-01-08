@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 堆排序
+ * @Authon Sun
  */
 public class HeapSort {
 
@@ -16,7 +17,7 @@ public class HeapSort {
     /**
      * 下沉调整
      *
-     * @param array       待调整的堆
+     * @param array 待调整的堆
      * @param parentIndex 要下沉的父节点
      * @param parentIndex 堆的有效大小
      */
@@ -43,7 +44,7 @@ public class HeapSort {
 
     /**
      * 堆排序
-     * @param array     待调整的堆
+     * @param array 待调整的堆
      */
     public static void heapSort(int[] array){
         // 1.把无序数组构建成二叉堆。
