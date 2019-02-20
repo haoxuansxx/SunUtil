@@ -1,11 +1,16 @@
-package com.sun.Java8;
+package com.sun.java8.optional;
 
 import java.util.Optional;
 
-public class JavaTester {
-    public static void main(String args[]){
+/**
+ * Java Optional工具类
+ * @author Sun
+ * @date 2019-02-20
+ */
+public class JavaOptional {
+    public static void main(String args[]) {
 
-        JavaTester java8Tester = new JavaTester();
+        JavaOptional java8Tester = new JavaOptional();
         Integer value1 = null;
         Integer value2 = new Integer(10);
 
@@ -14,10 +19,10 @@ public class JavaTester {
 
         // Optional.of - 如果传递的参数是 null，抛出异常 NullPointerException
         Optional<Integer> b = Optional.of(value2);
-        System.out.println(java8Tester.sum(a,b));
+        System.out.println(java8Tester.sum(a, b));
     }
 
-    public Integer sum(Optional<Integer> a, Optional<Integer> b){
+    public Integer sum(Optional<Integer> a, Optional<Integer> b) {
 
         // Optional.isPresent - 判断值是否存在
 

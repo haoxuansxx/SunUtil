@@ -2,6 +2,8 @@ package com.sun.image.baidu;
 
 /**
  * Base64 工具类
+ * @author Sun
+ * @date 2019-02-20
  */
 public class Base64Util {
     private static final char last2byte = (char) Integer.parseInt("00000011", 2);

@@ -4,11 +4,13 @@ import java.net.URLEncoder;
 import com.sun.image.baidu.AuthService;
 import com.sun.image.baidu.HttpUtil;
 
+/**
+ * 图像文字识别
+ * @author Sun
+ * @date 2019-02-20
+ */
 public class ImageExcelResult {
 
-    /**
-     * 图像文字识别
-     */
     public static void main(String[] args) {
 
         //返回    result:{"result":[{"request_id":"14681867_668303"}],"log_id":15414123806946949}

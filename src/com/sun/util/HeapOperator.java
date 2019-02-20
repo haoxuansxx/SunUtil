@@ -4,22 +4,24 @@ import java.util.Arrays;
 
 /**
  * 二叉堆
+ *
  * @Authon Sun
  */
 public class HeapOperator {
 
     public static void main(String[] args) {
-        int[] array = new int[] {1,3,2,6,5,7,8,9,10,0};
+        int[] array = new int[]{1, 3, 2, 6, 5, 7, 8, 9, 10, 0};
         upAdjust(array);
         System.out.println(Arrays.toString(array));
 
-        array = new int[] {7,1,3,10,5,2,8,9,6};
+        array = new int[]{7, 1, 3, 10, 5, 2, 8, 9, 6};
         buildHeap(array);
         System.out.println(Arrays.toString(array));
     }
 
     /**
      * 上浮调整
+     *
      * @param array 待调整的堆
      */
     public static void upAdjust(int[] array) {
@@ -39,7 +41,7 @@ public class HeapOperator {
     /**
      * 下沉调整
      *
-     * @param array 待调整的堆
+     * @param array       待调整的堆
      * @param parentIndex 要下沉的父节点
      * @param parentIndex 堆的有效大小
      */
@@ -66,6 +68,7 @@ public class HeapOperator {
 
     /**
      * 构建堆
+     *
      * @param array 待调整的堆
      */
     public static void buildHeap(int[] array) {

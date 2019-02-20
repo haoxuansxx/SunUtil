@@ -22,7 +22,7 @@ public class Queen8 {
     public static int chessBoard[][] = new int[Queen8.MAX_NUM][Queen8.MAX_NUM];
 
     /**
-     * main 启动方法
+     * Main 启动方法
      */
     public static void main(String[] args) {
         // 创建对象并启用回溯方法

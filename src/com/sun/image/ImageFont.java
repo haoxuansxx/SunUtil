@@ -6,11 +6,13 @@ import com.sun.image.baidu.FileUtil;
 import com.sun.image.baidu.HttpUtil;
 import com.baidu.aip.util.Base64Util;
 
+/**
+ * 图像文字识别
+ * @author Sun
+ * @date 2019-02-20
+ */
 public class ImageFont {
 
-    /**
-     * 图像文字识别
-     */
     public static void main(String[] args) {
 
         /* 图像文字识别 */

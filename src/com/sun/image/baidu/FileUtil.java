@@ -4,6 +4,8 @@ import java.io.*;
 
 /**
  * 文件读取工具类
+ * @author Sun
+ * @date 2019-02-20
  */
 public class FileUtil {
 
