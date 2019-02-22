@@ -27,7 +27,19 @@ public class Apple {
      */
     private Integer weight;
 
+    public Apple(){
+    }
+
+    public Apple(Integer weight){
+        this.weight = weight;
+    }
+
     public Apple(Integer weight, String color){
+        this.color = color;
+        this.weight = weight;
+    }
+    public Apple(String type, String color, Integer weight){
+        this.type = type;
         this.color = color;
         this.weight = weight;
     }

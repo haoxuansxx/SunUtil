@@ -6,12 +6,15 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- * Apple类 测试程序入口
+ * Apple类 测试程序入口1  -- Lambda 基础用法
  * @author Sun
  * @date 2019-02-20
  */
 public class Main {
 
+    /**
+     * 测试程序主入口
+     */
     public static void main(String ... args){
 
         List<Apple> inventory = Arrays.asList(new Apple(80,"green"),
