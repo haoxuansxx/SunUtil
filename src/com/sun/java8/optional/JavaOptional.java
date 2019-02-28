@@ -10,6 +10,13 @@ import java.util.Optional;
 public class JavaOptional {
     public static void main(String args[]) {
 
+        /**
+         * isPresent()：---------------------将在Optional包含值的时候返回true, 否则返回false。
+         * ifPresent(Consumer<T> block) ：---会在值存在的时候执行给定的代码块。
+         * T get()：-------------------------会在值存在时返回值，否则抛出一个NoSuchElement异常。
+         * T orElse：(T other)---------------会在值存在时返回值，否则返回一个默认值。
+         */
+
         JavaOptional java8Tester = new JavaOptional();
         Integer value1 = null;
         Integer value2 = new Integer(10);
