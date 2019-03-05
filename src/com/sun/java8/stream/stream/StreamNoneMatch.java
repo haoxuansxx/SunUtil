@@ -1,11 +1,6 @@
 package com.sun.java8.stream.stream;
 
-import com.sun.java8.data.StreamsData;
-import com.sun.java8.stream.bean.Dish;
-
-import java.util.List;
-
-import static java.util.stream.Collectors.toList;
+import com.sun.java8.stream.data.StreamsData;
 
 /**
  * Stream.noneMatch  -- 确保流中所有元素都不能匹配给定的谓词

@@ -1,6 +1,6 @@
 package com.sun.java8.stream.stream;
 
-import com.sun.java8.data.StreamsData;
+import com.sun.java8.stream.data.StreamsData;
 import com.sun.java8.stream.bean.Dish;
 
 /**

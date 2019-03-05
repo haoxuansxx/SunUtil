@@ -31,6 +31,9 @@ public class Main {
 
     }
 
+    /**
+     * 根据货币类型对交易信息进行分组  -- 使用原始For循环写法
+     */
     private static void groupImperatively() {
         Map<Currency, List<Transaction>> transactionsByCurrencies = new HashMap<>();
         for (Transaction transaction : transactions) {
@@ -46,6 +49,9 @@ public class Main {
         System.out.println(transactionsByCurrencies);
     }
 
+    /**
+     * 根据货币类型对交易信息进行分组  -- 使用stream流写法
+     */
     private static void groupFunctionally() {
         Map<Currency, List<Transaction>> transactionsByCurrencies = transactions.stream().collect(groupingBy(Transaction::getCurrency));
         System.out.println(transactionsByCurrencies);

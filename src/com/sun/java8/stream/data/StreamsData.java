@@ -1,4 +1,4 @@
-package com.sun.java8.data;
+package com.sun.java8.stream.data;
 
 import com.sun.java8.stream.bean.Dish;
 import com.sun.java8.stream.bean.Type;
