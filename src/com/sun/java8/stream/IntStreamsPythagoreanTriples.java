@@ -4,12 +4,12 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * Streams流   -- 测试类
+ * IntStreams流   -- 找出1到100之间所有的勾股数
  *
  * @Author Sun
  * @date 2019-02-28
  */
-public class IntStreamsTest {
+public class IntStreamsPythagoreanTriples {
 
     public static void main(String... args) {
 

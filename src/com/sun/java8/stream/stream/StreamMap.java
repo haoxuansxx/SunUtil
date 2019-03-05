@@ -1,31 +1,30 @@
-package com.sun.java8.stream;
+package com.sun.java8.stream.stream;
 
+import com.sun.java8.data.StreamsData;
 import com.sun.java8.stream.bean.Dish;
-import com.sun.java8.stream.bean.Type;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.IntSupplier;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
-import static com.sun.java8.stream.StreamsUtil.menu;
 import static java.util.stream.Collectors.toList;
 
 /**
- * Streams流   -- 测试类
+ * Stream.map  -- 映射
  *
  * @Author Sun
- * @date 2019-02-27
+ * @date 2019-03-05
  */
-public class StreamsTest {
+public class StreamMap {
 
     public static void main(String... args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
 
         System.out.println("--------------------- 我是分割线 ------------------------");
-        // 查询筛选两个荤菜
-        List<Dish> dishes = menu.stream().filter(d -> d.getType() == Type.MEAT).limit(2).collect(toList());
-        dishes.stream().forEach(System.out::println);
+        System.out.println("方法：Stream.map（映射）");
+        // 方法：map  -- 参数：接收一个函数  -- 返回：根据参数返回确认返回数据
+        List<String> dishNames = StreamsData.menu.stream().map(Dish::getName).collect(toList());
+        dishNames.stream().forEach(System.out::println);
         System.out.println();
 
         System.out.println("--------------------- 我是分割线 ------------------------");
@@ -37,13 +36,12 @@ public class StreamsTest {
 
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 获取每道菜的名称长度
-        List<Integer> dishNameLengths = menu.stream().map(Dish::getName).map(String::length).collect(toList());
+        List<Integer> dishNameLengths = StreamsData.menu.stream().map(Dish::getName).map(String::length).collect(toList());
         dishNameLengths.stream().forEach(System.out::println);
         System.out.println();
 
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 给定一个数字列表，返回一个由每个数的平方构成的列表
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> squares = numbers.stream().map(n -> n * n).collect(toList());
         squares.stream().forEach(System.out::println);
         System.out.println();
@@ -65,34 +63,10 @@ public class StreamsTest {
 
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 数一数菜单中总共有多少个菜
-        Integer menuNumbers = menu.stream().map(d -> 1).reduce(0, (a, b) -> a + b);
-        long menuNumbers1 = menu.stream().count();
+        Integer menuNumbers = StreamsData.menu.stream().map(d -> 1).reduce(0, (a, b) -> a + b);
+        long menuNumbers1 = StreamsData.menu.stream().count();
         System.out.println("菜单中总共有多少个菜：" + menuNumbers);
         System.out.println();
-
-        System.out.println("--------------------- 我是分割线 ------------------------");
-        // 斐波纳契元祖序列
-        Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]}).limit(5).forEach(t -> System.out.println("(" + t[0] + "," + t[1] + ")"));
-        System.out.println();
-
-        System.out.println("--------------------- 我是分割线 ------------------------");
-        // 斐波纳契元祖序列
-        IntSupplier fib = new IntSupplier() {
-            private int previous = 0;
-            private int current = 1;
-
-            @Override
-            public int getAsInt() {
-                int oldPrevious = this.previous;
-                int nextValue = this.previous + this.current;
-                this.previous = this.current;
-                this.current = nextValue;
-                return oldPrevious;
-            }
-        };
-        IntStream.generate(fib).limit(5).forEach(System.out::println);
-        System.out.println();
-
-
     }
+
 }

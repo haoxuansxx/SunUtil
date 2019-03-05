@@ -1,4 +1,4 @@
-package com.sun.java8.stream;
+package com.sun.java8.stream.stream;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  * @Author Sun
  * @date 2019-02-28
  */
-public class StreamsNewUtil {
+public class StreamsNew {
 
     public static void main(String... args) {
 

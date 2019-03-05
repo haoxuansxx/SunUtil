@@ -1,34 +1,48 @@
-package com.sun.java8.stream;
+package com.sun.java8.stream.collectors;
 
+import com.sun.java8.data.StreamsData;
 import com.sun.java8.stream.bean.CaloricLevel;
 import com.sun.java8.stream.bean.Dish;
 import com.sun.java8.stream.bean.Type;
+import com.sun.java8.transaction.Currency;
+import com.sun.java8.transaction.Transaction;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
-import static com.sun.java8.stream.StreamsUtil.menu;
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.*;
 
 /**
- * Streams流   -- Collectors测试类
+ * Collectors.groupingBy  -- 分类
  *
  * @Author Sun
- * @date 2019-03-01
+ * @date 2019-03-05
  */
-public class StreamsCollectorsTest {
+public class CollectorsGroupingBy {
 
     public static void main(String... args) {
 
         System.out.println("--------------------- 我是分割线 ------------------------");
+        System.out.println("方法：Collectors.groupingBy");
+        // 对交易按照货币分组
+        Map<Currency, List<Transaction>> transactionByCurrencies = StreamsData.transactions.stream().collect(groupingBy(Transaction::getCurrency));
+        transactionByCurrencies.forEach((key, value) -> {
+            System.out.println("分组类型：" + key);
+            value.stream().forEach(o -> System.out.println(o.toString()));
+        });
+        System.out.println();
+
+        System.out.println("--------------------- 我是分割线 ------------------------");
         // 将菜肴以不同的卡路里进行分类
         System.out.println("将菜肴以不同的卡路里进行分类");
-        Map<CaloricLevel, List<Dish>> dishesByCaloricLevel = menu.stream().collect(groupingBy(dish -> {
-            if(dish.getCalories() <= 400){
+        Map<CaloricLevel, List<Dish>> dishesByCaloricLevel = StreamsData.menu.stream().collect(groupingBy(dish -> {
+            if (dish.getCalories() <= 400) {
                 return CaloricLevel.DIET;
-            }else if(dish.getCalories() <= 700){
+            } else if (dish.getCalories() <= 700) {
                 return CaloricLevel.NORMAL;
-            }else{
+            } else {
                 return CaloricLevel.FAT;
             }
         }));
@@ -38,12 +52,12 @@ public class StreamsCollectorsTest {
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 将菜肴以类型分组并以不同卡路里进行分类
         System.out.println("将菜肴以不同的卡路里进行分类");
-        Map<Type, Map<CaloricLevel, List<Dish>>> dishesByTypeCaloricLevel = menu.stream().collect(groupingBy(Dish::getType, groupingBy(dish -> {
-                    if(dish.getCalories() <= 401){
+        Map<Type, Map<CaloricLevel, List<Dish>>> dishesByTypeCaloricLevel = StreamsData.menu.stream().collect(groupingBy(Dish::getType, groupingBy(dish -> {
+                    if (dish.getCalories() <= 401) {
                         return CaloricLevel.DIET;
-                    }else if(dish.getCalories() <= 700){
+                    } else if (dish.getCalories() <= 700) {
                         return CaloricLevel.NORMAL;
-                    }else{
+                    } else {
                         return CaloricLevel.FAT;
                     }
                 }
@@ -54,31 +68,23 @@ public class StreamsCollectorsTest {
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 数一数菜单中每类菜有多少个
         System.out.println("将菜肴以不同的卡路里进行分类");
-        Map<Type, Long> typesCount = menu.stream().collect(groupingBy(Dish::getType, counting()));
+        Map<Type, Long> typesCount = StreamsData.menu.stream().collect(groupingBy(Dish::getType, counting()));
         System.out.println(typesCount);
         System.out.println();
 
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 以类型分组查找每一组里面卡路里最高的菜肴
         System.out.println("以类型分组查找每一组里面卡路里最高的菜肴");
-        Map<Type, Optional<Dish>> mostCaloricByType = menu.stream().collect(groupingBy(Dish::getType, maxBy(comparingInt(Dish::getCalories))));
+        Map<Type, Optional<Dish>> mostCaloricByType = StreamsData.menu.stream().collect(groupingBy(Dish::getType, maxBy(comparingInt(Dish::getCalories))));
         System.out.println(mostCaloricByType);
         System.out.println();
 
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 以类型分组汇总每一组里面卡路里总和
         System.out.println("以类型分组汇总每一组里面卡路里总和");
-        Map<Type, Integer> totalCaloriesByType = menu.stream().collect(groupingBy(Dish::getType, summingInt(Dish::getCalories)));
+        Map<Type, Integer> totalCaloriesByType = StreamsData.menu.stream().collect(groupingBy(Dish::getType, summingInt(Dish::getCalories)));
         System.out.println(totalCaloriesByType);
         System.out.println();
-
-        System.out.println("--------------------- 我是分割线 ------------------------");
-        // 素食和非素食中热量最高的菜肴
-        System.out.println("素食和非素食中热量最高的菜肴");
-        Map<Boolean, Dish> vegetarianDishesByType = menu.stream().collect(partitioningBy(Dish::isVegetarian, collectingAndThen(maxBy(comparingInt(Dish::getCalories)), Optional::get)));
-        System.out.println("素食和非素食中热量最高的菜肴：" + vegetarianDishesByType);
-        System.out.println();
-
     }
 
 }

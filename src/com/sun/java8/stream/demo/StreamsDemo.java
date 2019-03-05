@@ -1,4 +1,4 @@
-package com.sun.java8.stream;
+package com.sun.java8.stream.demo;
 
 import com.sun.java8.stream.bean.Trader;
 import com.sun.java8.stream.bean.Transaction;
@@ -18,7 +18,7 @@ import static java.util.stream.Collectors.toSet;
  * @Author Sun
  * @date 2019-02-28
  */
-public class StreamsTest1 {
+public class StreamsDemo {
 
     protected static List<Transaction> transactions;
 
@@ -28,7 +28,7 @@ public class StreamsTest1 {
         Trader alan = new Trader("Alan", "Cambridge");
         Trader brian = new Trader("Brian", "Cambridge");
 
-        StreamsTest1.transactions = Arrays.asList(
+        StreamsDemo.transactions = Arrays.asList(
                 new Transaction(brian, 2011, 300),
                 new Transaction(raoul, 2012, 1000),
                 new Transaction(raoul, 2011, 400),
