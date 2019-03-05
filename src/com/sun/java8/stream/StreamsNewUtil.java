@@ -3,7 +3,6 @@ package com.sun.java8.stream;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -11,7 +10,7 @@ import java.util.stream.Stream;
 /**
  * Streams流   -- 创建流Api
  *
- * @author Sun
+ * @Author Sun
  * @date 2019-02-28
  */
 public class StreamsNewUtil {

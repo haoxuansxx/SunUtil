@@ -1,11 +1,12 @@
-package com.sun.util;
+package com.sun.arithmetic;
 
 import java.util.Arrays;
 
 /**
  * 二叉堆
  *
- * @Authon Sun
+ * @Author Sun
+ * @date 2019-03-05
  */
 public class HeapOperator {
 

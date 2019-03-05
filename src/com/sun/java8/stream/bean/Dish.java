@@ -2,14 +2,27 @@ package com.sun.java8.stream.bean;
 
 /**
  * 菜肴基础类
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-27
  */
 public class Dish {
 
+    /**
+     * 菜肴名称
+     */
     private final String name;
+    /**
+     * 是否素菜
+     */
     private final boolean vegetarian;
+    /**
+     * 热量
+     */
     private final int calories;
+    /**
+     * 菜肴类型
+     */
     private final Type type;
 
     public Dish(String name, boolean vegetarian, int calories, Type type) {

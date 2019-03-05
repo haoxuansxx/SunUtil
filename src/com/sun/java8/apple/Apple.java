@@ -1,8 +1,9 @@
 package com.sun.java8.apple;
 
 /**
- * 苹果类
- * @author Sun
+ * 苹果基础类
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class Apple {

@@ -8,7 +8,8 @@ import com.baidu.aip.util.Base64Util;
 
 /**
  * 图像文字识别
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class ImageFont {

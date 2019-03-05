@@ -5,7 +5,8 @@ import static java.util.stream.Collectors.groupingBy;
 
 /**
  * 累计金额交易程序主入口  -- Stream
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class Main {

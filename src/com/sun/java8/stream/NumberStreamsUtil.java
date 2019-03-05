@@ -11,7 +11,7 @@ import static com.sun.java8.stream.StreamsUtil.menu;
 /**
  * Streams数值流   -- API类
  *
- * @author Sun
+ * @Author Sun
  * @date 2019-02-28
  */
 public class NumberStreamsUtil {

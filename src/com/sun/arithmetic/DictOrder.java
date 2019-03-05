@@ -1,11 +1,12 @@
-package com.sun.util;
+package com.sun.arithmetic;
 
 import java.util.Arrays;
 
 /**
  * 寻找最近的换位数----字典序算法
  *
- * @author Sun
+ * @Author Sun
+ * @date 2019-03-05
  */
 public class DictOrder {
 

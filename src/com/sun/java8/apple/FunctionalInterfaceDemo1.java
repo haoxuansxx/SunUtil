@@ -2,7 +2,8 @@ package com.sun.java8.apple;
 
 /**
  * 函数式接口测试2
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-22
  */
 public interface FunctionalInterfaceDemo1<T, U, V, R> {

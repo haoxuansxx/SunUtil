@@ -1,10 +1,11 @@
-package com.sun.util;
+package com.sun.arithmetic;
 
 
 /**
  * 国际象棋8皇后问题
  *
- * @Authon Sun
+ * @Author Sun
+ * @date 2019-03-05
  */
 public class Queen8 {
 

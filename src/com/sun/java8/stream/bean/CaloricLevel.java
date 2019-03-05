@@ -4,21 +4,20 @@ package com.sun.java8.stream.bean;
  * 菜肴类型枚举类
  *
  * @Author Sun
- * @date 2019-02-27
+ * @date 2019-03-01
  */
-public enum Type {
-
+public enum  CaloricLevel {
     /**
-     * 肉类
+     * 低热量
      */
-    MEAT,
+    DIET,
     /**
-     * 鱼类
+     * 普通热量
      */
-    FISH,
+    NORMAL,
     /**
-     * 其他
+     * 高热量
      */
-    OTHER
+    FAT
 
 }

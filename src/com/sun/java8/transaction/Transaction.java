@@ -2,7 +2,8 @@ package com.sun.java8.transaction;
 
 /**
  * 累计金额交易类
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class Transaction {

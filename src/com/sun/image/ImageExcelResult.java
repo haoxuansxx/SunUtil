@@ -6,7 +6,8 @@ import com.sun.image.baidu.HttpUtil;
 
 /**
  * 图像文字识别
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class ImageExcelResult {

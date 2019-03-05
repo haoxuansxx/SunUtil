@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
@@ -16,19 +15,20 @@ import static java.util.stream.Collectors.toSet;
 /**
  * Streams流   -- 测试类
  *
- * @author Sun
+ * @Author Sun
  * @date 2019-02-28
  */
 public class StreamsTest1 {
 
-    public static void main(String... args) {
+    protected static List<Transaction> transactions;
 
+    static {
         Trader raoul = new Trader("Raoul", "Cambridge");
         Trader mario = new Trader("Mario", "Milan");
         Trader alan = new Trader("Alan", "Cambridge");
         Trader brian = new Trader("Brian", "Cambridge");
 
-        List<Transaction> transactions = Arrays.asList(
+        StreamsTest1.transactions = Arrays.asList(
                 new Transaction(brian, 2011, 300),
                 new Transaction(raoul, 2012, 1000),
                 new Transaction(raoul, 2011, 400),
@@ -36,6 +36,9 @@ public class StreamsTest1 {
                 new Transaction(mario, 2012, 700),
                 new Transaction(alan, 2012, 950)
         );
+    }
+
+    public static void main(String... args) {
 
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 1. 找出2011年发生的所有交易，并按交易额排序（从低到高）。
@@ -79,7 +82,7 @@ public class StreamsTest1 {
         System.out.println("--------------------- 我是分割线 ------------------------");
         // 8. 找到交易额最小的交易。
         Optional<Transaction> min = transactions.stream().min(comparing(Transaction::getValue));
-        System.out.println("最小的交易额是：" + min.orElse(new Transaction(brian,1900, 0)).getValue());
+        System.out.println("最小的交易额是：" + min.orElse(new Transaction(new Trader("Raoul", "Cambridge"), 1900, 0)).getValue());
 
     }
 

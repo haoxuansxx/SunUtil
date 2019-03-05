@@ -2,7 +2,8 @@ package com.sun.java8.transaction;
 
 /**
  * 货币类型枚举类
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public enum Currency {

@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 苹果功能类
  *
+ * @Author Sun
+ * @date 2019-02-20
  */
 public class FilteringApples {
 

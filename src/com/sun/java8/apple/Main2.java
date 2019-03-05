@@ -8,7 +8,7 @@ import java.util.function.*;
 /**
  * Apple类 测试程序入口2  -- Lambda 默认表达式接口
  *
- * @author Sun
+ * @Author Sun
  * @date 2019-02-22
  */
 public class Main2 {

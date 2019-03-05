@@ -7,7 +7,8 @@ import java.util.function.Predicate;
 
 /**
  * Apple类 测试程序入口1  -- Lambda 基础用法
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class Main {

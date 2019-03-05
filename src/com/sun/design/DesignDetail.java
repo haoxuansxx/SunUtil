@@ -2,8 +2,9 @@ package com.sun.design;
 
 /**
  * 设计模式目录类
- * @author Sun
- * @date 2019-02-20
+ *
+ * @Author Sun
+ * @date 2019-03-05
  */
 public class DesignDetail {
 

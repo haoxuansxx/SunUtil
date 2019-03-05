@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toList;
 /**
  * Streams流   -- 测试类
  *
- * @author Sun
+ * @Author Sun
  * @date 2019-02-27
  */
 public class StreamsTest {

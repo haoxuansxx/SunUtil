@@ -2,7 +2,8 @@ package com.sun.image.baidu;
 
 /**
  * Base64 工具类
- * @author Sun
+ *
+ * @Author Sun
  * @date 2019-02-20
  */
 public class Base64Util {

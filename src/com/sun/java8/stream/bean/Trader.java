@@ -3,7 +3,7 @@ package com.sun.java8.stream.bean;
 /**
  * 交易员基础类
  *
- * @author Sun
+ * @Author Sun
  * @date 2019-02-28
  */
 public class Trader {
