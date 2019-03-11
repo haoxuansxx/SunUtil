@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sun</groupId>
+    <artifactId>sun</artifactId>
+    <version>1.0</version>
+    <modules>
+        <module>admin</module>
+        <module>arithmetic</module>
+        <module>java8</module>
+        <module>spring</module>
+        <module>baidu</module>
+        <module>design</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>Sun</name>
+    <description>Sun 的学习之路</description>
+
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+</project>
