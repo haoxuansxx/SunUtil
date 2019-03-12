@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arithmetic/Arithmetic.iml" filepath="$PROJECT_DIR$/Arithmetic/Arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baidu/Baidu.iml" filepath="$PROJECT_DIR$/Baidu/Baidu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design/Design.iml" filepath="$PROJECT_DIR$/Design/Design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java8/Java8.iml" filepath="$PROJECT_DIR$/Java8/Java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSE/JavaSE.iml" filepath="$PROJECT_DIR$/JavaSE/JavaSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Plugins/Plugins.iml" filepath="$PROJECT_DIR$/Plugins/Plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/SunUtil.iml" filepath="$PROJECT_DIR$/SunUtil.iml" />
-      <module fileurl="file://$PROJECT_DIR$/arithmetic/arithmetic.iml" filepath="$PROJECT_DIR$/arithmetic/arithmetic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/baidu/baidu.iml" filepath="$PROJECT_DIR$/baidu/baidu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/design/design.iml" filepath="$PROJECT_DIR$/design/design.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javaSE/javaSE.iml" filepath="$PROJECT_DIR$/javaSE/javaSE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
     </modules>
   </component>
 </project>

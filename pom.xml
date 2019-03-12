@@ -6,18 +6,29 @@
     <groupId>com.sun</groupId>
     <artifactId>sun</artifactId>
     <version>1.0</version>
+
     <modules>
-        <module>admin</module>
-        <module>arithmetic</module>
-        <module>java8</module>
-        <module>spring</module>
-        <module>baidu</module>
-        <module>design</module>
+        <module>Arithmetic</module>
+        <module>Baidu</module>
+        <module>Design</module>
+        <module>Java8</module>
+        <module>JavaSE</module>
+        <module>Plugins</module>
+        <module>Spring</module>
+        <module></module>
     </modules>
+
     <packaging>pom</packaging>
 
     <name>Sun</name>
     <description>Sun 的学习之路</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+        <relativePath/>
+    </parent>
 
     <repositories>
         <repository>
