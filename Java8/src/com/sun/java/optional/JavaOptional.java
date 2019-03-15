@@ -3,10 +3,10 @@ package optional;
 import java.util.Optional;
 
 /**
- * Java Optional工具类
+ * Java Optional示例类
  *
  * @Author Sun
- * @date 2019-02-20
+ * @date 2019-03-15
  */
 public class JavaOptional {
     public static void main(String args[]) {
