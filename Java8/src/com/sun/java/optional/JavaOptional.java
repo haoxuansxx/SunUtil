@@ -40,9 +40,15 @@ public class JavaOptional {
 
         System.out.println("-------------------- Optional.orElse - 如果值存在，返回它，否则返回默认值 --------------------");
         value1 = a.orElse(new Integer(0));
+        System.out.println("如果值存在，返回它，否则返回默认值：" + value1);
 
-        System.out.println("-------------------- Optional.get - 获取值，值需要存在 --------------------");
+        System.out.println("-------------------- Optional.get - 会在值存在时返回值，否则抛出一个NoSuchElement异常 --------------------");
         value2 = b.get();
+        System.out.println("获取值，值需要存在：" + value2);
+
+        System.out.println("-------------------- Optional.flatMap - 将给定String类型字符串转换为Integer类型 --------------------");
+        Integer value3 = Optional.ofNullable("35.5").flatMap(OptionalUtility::stringToInt).filter(i -> i > 30).orElse(0);
+        System.out.println("将给定String类型字符串转换为Integer类型：" + value3);
 
 
     }
