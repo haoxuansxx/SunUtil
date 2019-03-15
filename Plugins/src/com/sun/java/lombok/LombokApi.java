@@ -242,7 +242,7 @@ public class LombokApi {
      * 部分参数构造器
      */
     public static void RequiredArgsConstructor() {
-        @RequiredArgsConstructor(staticName = "of")
+        // @RequiredArgsConstructor(staticName = "of")
         class Person {
             private String name;
         }

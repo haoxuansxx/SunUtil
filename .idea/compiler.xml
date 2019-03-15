@@ -18,6 +18,7 @@
     <bytecodeTargetLevel>
       <module name="Arithmetic" target="1.8" />
       <module name="Baidu" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="Design" target="1.8" />
       <module name="Java8" target="1.8" />
       <module name="JavaSE" target="1.8" />
