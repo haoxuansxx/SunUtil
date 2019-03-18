@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Arithmetic" />
-        <module name="Baidu" />
+        <module name="baidu" />
         <module name="Design" />
         <module name="Java8" />
         <module name="JavaSE" />
@@ -17,7 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Arithmetic" target="1.8" />
-      <module name="Baidu" target="1.8" />
+      <module name="baidu" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="Design" target="1.8" />
       <module name="Java8" target="1.8" />
