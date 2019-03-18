@@ -9,7 +9,7 @@ package collection;
 public class CollectionIterator {
 
     /**
-     * forEachRemaining     --
+     * forEachRemaining     -- 遍历Iterator集合
      */
     public static void main(String... args) {
 

@@ -13,7 +13,7 @@ public class CollectionList {
 
     /**
      * replaceAll           -- replaceAll方法会对列表中的每一个元素执行特定的操作，并用处理的结果替换该元素。
-     * sort                 --
+     * sort                 -- 对集合进行排序
      */
     public static void main(String... args) {
         // 下面这段代码会打印输出[2,4,6,8,10]，因为列表中的元素被原地修改了
