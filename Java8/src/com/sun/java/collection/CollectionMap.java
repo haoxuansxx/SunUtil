@@ -2,7 +2,6 @@ package collection;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Stream;
 
 /**
  * Java 8 Map集合新添加方法示例
@@ -20,9 +19,9 @@ public class CollectionMap {
      * computeIfPresent     -- 如果指定的key存在并且相关联的value不为null时根据旧的key和value计算newValue替换旧值，newValue为null则从map中删除该key;
      * merge                -- 如果指定的key不存在，或相应的值为null时，则设置value为相关联的值。否则根据key对应的旧值和value计算出新的值newValue，
      *                         newValue为null时，删除该key, 否则设置key对应的值为newValue。
-     * putIfAbsent          -- 如果 key 不存在或相关联的值为 null, 则设置新的 key/value 值。
-     * remove(key,value)    -- key 与 value 都匹配时才删除。
-     * replace              -- 只要key存在，不管对应值是否为 null则用传入的value替代原来的值。
+     * putIfAbsent          -- 如果key不存在或相关联的值为null, 则设置新的 key/value 值。
+     * remove(key,value)    -- key与value都匹配时才删除。
+     * replace              -- 只要key存在，不管对应值是否为null则用传入的value替代原来的值。
      * replaceAll           -- 对于Map中的每一个元素应用函数function, 输入为key和value。
      */
     public static void main(String... args) {

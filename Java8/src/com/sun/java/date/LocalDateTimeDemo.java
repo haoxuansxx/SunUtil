@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.time.Month;
 
 /**
- * LocalDateTime 日期+时间组合类示例类
+ * LocalDateTime 日期+时间组合类示例类        -- 建议代替Calendar
  *
  * @Author Sun
  * @date 2019-03-18

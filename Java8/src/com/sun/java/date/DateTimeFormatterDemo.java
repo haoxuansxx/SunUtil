@@ -7,7 +7,7 @@ import java.time.temporal.ChronoField;
 import java.util.Locale;
 
 /**
- * 格式化日期处理示例类
+ * 格式化日期处理示例类           -- 建议代替SimpleDateFormat
  *
  * @Author Sun
  * @date 2019-03-18

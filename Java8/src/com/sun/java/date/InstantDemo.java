@@ -3,7 +3,7 @@ package date;
 import java.time.Instant;
 
 /**
- * Instant 机器的日期和时间示例类
+ * Instant 机器的日期和时间示例类      -- 建议代替Date类
  *
  * @Author Sun
  * @date 2019-03-18

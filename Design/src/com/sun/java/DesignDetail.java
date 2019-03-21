@@ -17,7 +17,7 @@ public class DesignDetail {
      * 7. 代理模式    Proxy
      * 8. 外观模式    Appearance
      * 9. 桥接模式    Bridging
-     * 10. 组合模式    Combination
+     * 10. 组合模式    Composite
      * 11. 策略模式    Strategy
      * 12. 模板方法模式    TemplateMethon
      * 13. 观察者模式    Observer
@@ -41,7 +41,7 @@ public class DesignDetail {
      */
 
     public static void main(String... args){
-        System.out.println("Java知音 -> Java知音 -> 查缺补漏 -> 23种设计模式");
+        System.out.println("23种设计模式！");
     }
 
 }
