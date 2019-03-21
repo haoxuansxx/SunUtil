@@ -16,6 +16,7 @@
         <module>Plugins</module>
         <module>Spring</module>
         <module></module>
+        <module>LeetCode</module>
     </modules>
 
     <packaging>pom</packaging>

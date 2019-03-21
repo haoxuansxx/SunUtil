@@ -11,6 +11,7 @@
         <module name="Design" />
         <module name="Java8" />
         <module name="JavaSE" />
+        <module name="LeetCode" />
         <module name="Plugins" />
         <module name="Spring" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="Design" target="1.8" />
       <module name="Java8" target="1.8" />
       <module name="JavaSE" target="1.8" />
+      <module name="LeetCode" target="1.8" />
       <module name="Plugins" target="1.8" />
       <module name="Spring" target="1.8" />
       <module name="SunUtil" target="1.8" />
